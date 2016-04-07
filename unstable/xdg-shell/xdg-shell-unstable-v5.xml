@@ -42,7 +42,7 @@
 	they implement using static_assert to ensure the protocol and
 	implementation versions match.
       </description>
-      <entry name="current" value="5" summary="Always the latest version"/>
+      <entry name="current" value="5" summary="always the latest version"/>
     </enum>
 
     <enum name="error">
@@ -138,7 +138,7 @@
   </interface>
 
   <interface name="xdg_surface" version="1">
-    <description summary="A desktop window">
+    <description summary="a desktop window">
       An interface that may be implemented by a wl_surface, for
       implementations that provide a desktop-style user interface.
 
@@ -161,7 +161,7 @@
     </description>
 
     <request name="destroy" type="destructor">
-      <description summary="Destroy the xdg_surface">
+      <description summary="destroy the xdg_surface">
 	Unmap and destroy the window. The window will be effectively
 	hidden from the user's point of view, and all state like
 	maximization, fullscreen, and so on, will be lost.
