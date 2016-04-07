@@ -332,7 +332,7 @@
         values and documenting the range they chose in this description.
         They are not required to document the values for the range that they
         chose. Ideally, any good extensions from a desktop environment should
-        make its way into standardization into this enum.
+        make their way into standardization with this enum.
 
         The current reserved ranges are:
 
@@ -380,7 +380,7 @@
 
 	If the width or height arguments are zero, it means the client
 	should decide its own window dimension. This may happen when the
-	compositor need to configure the state of the surface but doesn't
+	compositor needs to configure the state of the surface but doesn't
 	have any information about any previous or expected dimension.
 
 	The states listed in the event specify how the width/height
@@ -388,7 +388,7 @@
 	drawn.
 
 	Clients should arrange their surface for the new size and
-	states, and then send a ack_configure request with the serial
+	states, and then send an ack_configure request with the serial
 	sent in this configure event at some point before committing
 	the new surface.
 
@@ -537,13 +537,13 @@
     <event name="close">
       <description summary="surface wants to be closed">
         The close event is sent by the compositor when the user
-        wants the surface to be closed. This should be equivalent to
+        wants the window to be closed. This should be equivalent to
         the user clicking the close button in client-side decorations,
-        if your application has any...
+        if your application has any.
 
-        This is only a request that the user intends to close your
+        This is only a request that the user intends to close the
         window. The client may choose to ignore this request, or show
-        a dialog to ask the user to save their data...
+        a dialog to ask the user to save their data, etc.
       </description>
     </event>
   </interface>
